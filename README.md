@@ -51,3 +51,7 @@ The goal of this project was to develop a model to predict the probability that 
 
 ### Conclusion
 The *XGBoost* model provided the best performance compared to other algorithms. Analysis based on *SHAP* and *Partial Dependence Plots* helped to understand the key factors influencing user behavior. The findings can be used to fine-tune the recommendation system and develop personalized offers for platform users.
+
+### Recommendation Feed Enhancement
+Beyond probability-based ranking, the system includes cluster-aware feed randomization. All streamers are grouped into five behavioral clusters, and only lower-ranked recommendations are lightly shuffled **within their cluster**, while the top results remain fixed. This keeps the feed dynamic and varied without losing relevance, improves user engagement, and prevents repetitive or static recommendation patterns.
+
